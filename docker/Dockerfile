@@ -27,3 +27,6 @@ RUN curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-c
 
 # Switch back to jenkins user
 USER jenkins
+
+# Copy the Groovy script for user creation
+COPY init.groovy /usr/share/jenkins/ref/init.groovy.d/
